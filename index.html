@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yeasir Arafat | Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background-color:#f4f4f4;
+    color:#333;
+}
+
+/* Header */
+header{
+    background-color:navy;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+header p{
+    margin-top:10px;
+}
+
+/* Navigation */
+nav{
+    background-color:steelblue;
+    text-align:center;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+/* Hero Section */
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    padding:40px;
+    background:white;
+}
+
+.hero-text{
+    width:55%;
+}
+
+.hero-text h2{
+    color:navy;
+    margin-bottom:15px;
+}
+
+.hero-text p{
+    margin-bottom:20px;
+}
+
+.btn{
+    display:inline-block;
+    background:steelblue;
+    color:white;
+    text-decoration:none;
+    padding:10px 20px;
+    border-radius:5px;
+}
+
+.btn:hover{
+    background:navy;
+}
+
+.hero-image{
+    width:35%;
+    text-align:center;
+}
+
+.hero-image img{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    border:5px solid steelblue;
+    object-fit:cover;
+}
+
+/* Sections */
+section{
+    padding:40px;
+}
+
+h2{
+    color:navy;
+    margin-bottom:20px;
+}
+
+/* Skills */
+.skill-box{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.skill{
+    background:steelblue;
+    color:white;
+    padding:10px 20px;
+    border-radius:20px;
+}
+
+/* Projects */
+.project-container{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.project{
+    background:white;
+    width:300px;
+    padding:20px;
+    border-radius:8px;
+    box-shadow:0 0 10px lightgray;
+}
+
+/* Contact */
+form{
+    max-width:500px;
+    display:flex;
+    flex-direction:column;
+}
+
+input,
+textarea{
+    margin:10px 0;
+    padding:10px;
+    border:1px solid gray;
+    border-radius:5px;
+}
+
+button{
+    background:steelblue;
+    color:white;
+    border:none;
+    padding:10px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:navy;
+}
+
+/* Footer */
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.social{
+    margin-top:10px;
+}
+
+.social a{
+    color:white;
+    text-decoration:none;
+    margin:10px;
+}
+
+.social a:hover{
+    color:yellow;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-text,
+.hero-image{
+    width:100%;
+}
+
+.hero-image{
+    margin-top:20px;
+}
+
+.project{
+    width:100%;
+}
+
+nav a{
+    display:block;
+    margin:10px;
+}
+
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Yeasir Arafat</h1>
+    <p>Software Engineering Student | QA Enthusiast</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero" id="home">
+
+<div class="hero-text">
+
+<h2>Hello, I'm Yeasir Arafat 👋</h2>
+
+<p>
+Welcome to my personal portfolio website.
+I am a Software Engineering student interested in
+Quality Assurance (QA), Software Testing and Web Development.
+</p>
+
+<a href="#projects" class="btn">View My Projects</a>
+
+</div>
+
+<div class="hero-image">
+<img src="profile.jpg" alt="Profile Picture">
+</div>
+
+</section>
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+I am a Software Engineering student at Daffodil International University.
+My goal is to become a Software Quality Assurance Engineer.
+I enjoy learning HTML, CSS, JavaScript and Manual Testing.
+</p>
+
+</section>
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="skill-box">
+
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">Manual Testing</div>
+<div class="skill">Test Case Writing</div>
+<div class="skill">GitHub</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="project-container">
+
+<div class="project">
+<h3>Hospital Management Testing</h3>
+<p>Prepared Test Plan, Test Cases and Bug Reports for a Hospital Management System.</p>
+</div>
+
+<div class="project">
+<h3>Personal Portfolio</h3>
+<p>Designed a responsive portfolio website using HTML and CSS.</p>
+</div>
+
+<div class="project">
+<h3>QA Documentation</h3>
+<p>Created Requirement Analysis, Test Scenario and Test Case documents.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact Me</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<textarea rows="5" placeholder="Your Message" required></textarea>
+
+<button type="submit">Submit</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<p>© 2026 Yeasir Arafat</p>
+
+<div class="social">
+<a href="https://github.com/" target="_blank">GitHub</a> |
+<a href="https://linkedin.com/" target="_blank">LinkedIn</a> |
+<a href="https://facebook.com/" target="_blank">Facebook</a>
+</div>
+
+</footer>
+
+</body>
+</html>
